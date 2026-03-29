@@ -1,0 +1,70 @@
+<!--index首页-->  
+<view class="body">
+<!--part1搜索栏-->
+    <view class="part-1-search">
+        <view class="search-content">
+            <input type="text" confirm-type="search" placeholder="请输入要搜索的内容"/>
+            <image src="/imgs/search.png"/>
+        </view>
+        <text class="part-1-text" >搜索商品</text>
+    </view>
+<!--part2商品种类选择-->
+    <view class="part-2-select">
+      <text class="part-2-item">二手书</text>
+      <text class="part-2-item">生活用品</text>
+      <text class="part-2-item">体育器械</text>
+      <text class="part-2-item">跑腿代做</text>
+    </view>
+    <!--part3商品橱窗-->
+    <!--现在还是v1版本，没有写网络请求，用本地的图片和数据-->
+    <view class="part-3-item">
+        <view class="item">
+            <image src="/imgs/item/item1.png" mode="widthFix"/>
+            <view>
+                <text class="introduction">这是商品1的介绍</text>
+                <text class="price">18</text>
+                <text class="place">湖滨</text>
+            </view>
+        </view>
+        <view class="item">
+            <image src="/imgs/item/item2.png" mode="widthFix"/>
+            <view>
+                <text class="introduction">这是商品2的介绍</text>
+                <text class="price">29</text>
+                <text class="place">文理学部</text>
+            </view>
+        </view>
+        <view class="item">
+            <image src="/imgs/item/item3.png" mode="widthFix"/>
+            <view>
+                <text class="introduction">这是商品3的介绍</text>
+                <text class="price">19.9</text>
+                <text class="place">医学部</text>
+            </view>
+        </view>
+        <view class="item">
+            <image src="/imgs/item/item4.png" mode="widthFix"/>
+            <view>
+                <text class="introduction">这是商品4的介绍</text>
+                <text class="price">2</text>
+                <text class="place">信息学部</text>
+            </view>
+        </view>
+        <view class="item">
+            <image src="/imgs/item/item5.png" mode="widthFix"/>
+            <view>
+                <text class="introduction">这是商品5的介绍</text>
+                <text class="price">199</text>
+                <text class="place">工学部</text>
+            </view>
+        </view>
+        <view class="item">
+            <image src="/imgs/item/item6.png" mode="widthFix"/>
+            <view>
+                <text class="introduction">这是商品6的介绍</text>
+                <text class="price">299</text>
+                <text class="place">信息学部</text>
+            </view>
+        </view>
+    </view>
+</view>
