@@ -1,5 +1,21 @@
 <!--pages/me/me.wxml-->
-<view class="container1"></view>
+<view class="container1">
+  <image src="{{avatarUrl}}" class="avatar"
+  mode="aspectFill" bindtap="chooseAvatar"></image>
+  <input class="nick-input"
+    placeholder="请输入昵称"
+    value="{{nickname}}"
+    bindinput="onNickInput"
+  />
+  <view class="container7">
+  <image src="/imgs/setting.png" class="picture3" bindtap="click">
+  </image>
+  <view wx:if="{{showModal}}" class="container8">
+  <view class="top">登录</view>
+  <view class="bottom">退出登录</view>
+  </view>
+  </view>
+</view>
 <view class="container6">
 <view class="container2">
 <image src="/imgs/order.png" class="picture1"></image>

@@ -1,11 +1,32 @@
 // pages/me/me.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    avatarUrl: "/imgs/avatar.webp", // 默认头像
+    nickname: "",
+    showModal: false
+  },
+  chooseAvatar() {
+    wx.chooseMedia({
+      count: 1,
+      mediaType: ['image'],
+      sourceType: ['album', 'camera'], // 相册 + 拍照
+      success: (res) => {
+        const tempFilePath = res.tempFiles[0].tempFilePath
+        this.setData({
+          avatarUrl: tempFilePath
+        })
+      }
+    })
+  },
+  onNickInput(e) {
+    this.setData({
+      nickname: e.detail.value
+    })
+  },
+  click() {
+    this.setData({
+      showModal: !this.data.showModal
+    })
   },
 
   /**
